@@ -6,7 +6,7 @@ template I've provided in `code.js`. Test your new function; I've provided some
 basic testing code that uses [jsverify](https://jsverify.github.io/) in
 `code.test.js`.
 
-Hint: To make qicksort iterative, think about the part of the array each
+Hint: To make quicksort iterative, think about the part of the array each
 recursive call considers.
 
 ## Runtime Analysis
@@ -14,3 +14,8 @@ recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+The average case for my implementation of quicksort is O(n*log(n)) since the partition
+function is linear and will be used for approximantly log(n) sublists. 
+The worst-case time complexity would be $\Theta$(n^2) because we would have to 
+essentially sublist n times and perform the partition on each, thus $\Theta$(n^2).
